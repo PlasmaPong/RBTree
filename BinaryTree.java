@@ -1,13 +1,13 @@
-
-public interface BinaryTree<K extends Comparable<K>, V> {
+package RBTree;
+public interface BinaryTree{
 	
 	
 	
-	public V lookup(K key);
+	public boolean lookup(int value);
 	
 	public int size();
 	
-	public void add(K key, V value);
+	public void add(int value);
 	 
-	public V remove(K key);
+	public boolean remove(int value);
 }
